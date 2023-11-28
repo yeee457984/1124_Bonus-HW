@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form class="container">
+            <div class="conatiner_left">
+                <div class="container-left_lebel">input1</div>
+                <div class="container-left_lebel">input2</div>
+                <div class="container-left_lebel">input4</div>
+                <div class="container-left_lebel textarea">textarea</div>
+                <div class="container-left_lebel">picture1</div>
+            </div>
+            <div class="conatiner_right">
+                <div class="container-right_lebel">
+                    <input type="text" placeholder="input1">
+                </div>
+                <div class="container-right_lebel right_two_input">
+                    <div>
+                        <input type="text" style="width: 100%;" placeholder="input2"> 
+                    </div>
+                    <div  > input3  <input type="text" style="width: 60%;" placeholder="input3"></div>
+                </div>
+                <div class="container-right_lebel">
+                    <input type="text" placeholder="input4">
+                </div>
+                <div class="container-right_lebel textarea">
+                    <textarea type="text" placeholder="make it not resizable" style="resize: none;" rows="4" cols="50"></textarea>
+                </div>
+                <div class="container-right_lebel">
+                    <img width="100%" src="./ok.png" />
+                </div>
+            </div>
+        </form>
+    </body>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 99vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+        .conatiner_left {
+            text-align: right;  
+        }
+        .conatiner_right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-left: 3%;
+        }
+        .container-left_lebel {
+            height: 30px;
+           
+        }
+        .container-right_lebel {
+            height: 30px;
+            width: 100%;
+        }
+        .container-right_lebel input {
+            width: 100%;
+        }
+        .container-right_lebel textarea {
+            width: 100%;
+        }
+        .right_two_input{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            text-align: right;
+        }
+        .textarea{
+            margin-bottom: 50px;
+        }
+    </style>
+</html>
